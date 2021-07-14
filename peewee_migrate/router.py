@@ -1,5 +1,6 @@
 """Migration router."""
 
+import datetime as dt
 import os
 import pkgutil
 import re
@@ -238,7 +239,8 @@ class Router(BaseRouter):
         filename = name + '.py'
         path = os.path.join(self.migrate_dir, filename)
         with open(path, 'w') as f:
-            f.write(MIGRATE_TEMPLATE.format(migrate=migrate, rollback=rollback, name=filename))
+            # FIXED
+            f.write(MIGRATE_TEMPLATE.format(migrate=migrate, rollback=(rollback if rollback else ''), current_date=dt.datetime.now(), name=filename))
 
         return name
 

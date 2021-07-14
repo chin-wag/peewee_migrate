@@ -29,6 +29,18 @@ Peewee Migrate -- A simple migration engine for Peewee_ ORM
 
 .. _requirements:
 
+Why Fork?
+=========
+
+Long ago, the two nations lived together in harmony. Then, everything changed when the Fire Nation attacked.
+
+* Peewee: default – Default value (enforced in Python, not on server)
+* Peewee migrate: automatically create server-side default
+
+This fork uses peewee's approach.
+
+Every change is marked with #FIXED comment.
+
 Requirements
 =============
 
