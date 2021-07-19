@@ -1,5 +1,7 @@
 """Peewee migrations -- {name}.
 
+Create Date -- {current_date}
+
 Some examples (model - class or model name)::
 
     > Model = migrator.orm['model_name']            # Return model in current state by name

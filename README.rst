@@ -8,8 +8,12 @@ Peewee Migrate -- A simple migration engine for Peewee_ ORM
 .. _badges:
 
 .. image:: https://github.com/klen/peewee_migrate/workflows/tests/badge.svg
-    :target: https://github.com/klen/peewee_migrate/actions
+    :target: https://github.com/klen/peewee_migrate/actions/workflows/tests.yml
     :alt: Tests Status
+
+.. image:: https://github.com/klen/peewee_migrate/workflows/release/badge.svg
+    :target: https://github.com/klen/peewee_migrate/actions/workflows/release.yml
+    :alt: Build Status
 
 .. image:: https://img.shields.io/pypi/v/peewee-migrate
     :target: https://pypi.org/project/peewee-migrate/
@@ -24,6 +28,18 @@ Peewee Migrate -- A simple migration engine for Peewee_ ORM
 .. contents::
 
 .. _requirements:
+
+Why Fork?
+=========
+
+Long ago, the two nations lived together in harmony. Then, everything changed when the Fire Nation attacked.
+
+* Peewee: default – Default value (enforced in Python, not on server)
+* Peewee migrate: automatically create server-side default
+
+This fork uses peewee's approach.
+
+Every change is marked with #FIXED comment.
 
 Requirements
 =============
